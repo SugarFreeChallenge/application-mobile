@@ -1,35 +1,35 @@
-# Prérequis pour l'installation de l'application Ionic (iOS/Android)
+# Prerequisites for Installing the Ionic Application (iOS/Android)
 
-## Prérequis généraux
-Avant de commencer, assurez-vous d'avoir installé les outils suivants :
-- [Node.js](https://nodejs.org/) (version LTS recommandée)
-- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
-- [Ionic CLI](https://ionicframework.com/docs/cli) : Installez-le globalement avec la commande :
-  ```bash
-  npm install -g @ionic/cli
-  ```
-- Capacitor CLI : Installez-le globalement avec la commande :
-  ```bash
-  npm install -g @capacitor/cli
-  ```
-  
+## General Prerequisites
+
+Before starting, make sure you have installed the following tools:
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Ionic CLI](https://ionicframework.com/docs/cli): Install it globally with the command:
+```bash
+npm install -g @ionic/cli
+```
+- Capacitor CLI: Install it globally with the command:
+```bash
+npm install -g @capacitor/cli
+```
 
 <details>
     <summary>MacOS</summary>
-Xcode :
-Téléchargez et installez Xcode depuis le Mac App Store.
-Assurez-vous d'avoir installé les outils en ligne de commande avec :
+Xcode:
+Download and install Xcode from the Mac App Store.
+Make sure you have installed the command line tools with:
 
 ```bash
 xcode-select --install
 ```
 
-- Téléchargé Homebrew via la commande suivante:
+- Download Homebrew using the following command:
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-- Installer CocoaPods via la commande suivante:
+- Install CocoaPods using the following command:
 ```bash
 brew install cocoapods
 ```
