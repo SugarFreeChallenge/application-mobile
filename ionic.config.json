@@ -1,0 +1,7 @@
+{
+  "name": "test-build-ios",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
