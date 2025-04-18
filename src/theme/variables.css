@@ -1,66 +1,66 @@
 /* For information on how to create your own theme, please see:
 http://ionicframework.com/docs/theming/ */
 :root {
-	--ion-color-primary: #C7CEEA;
-	--ion-color-primary-rgb: 199,206,234;
-	--ion-color-primary-contrast: #000000;
-	--ion-color-primary-contrast-rgb: 0,0,0;
-	--ion-color-primary-shade: #afb5ce;
-	--ion-color-primary-tint: #cdd3ec;
+    --ion-color-primary: #C7CEEA;
+    --ion-color-primary-rgb: 199, 206, 234;
+    --ion-color-primary-contrast: #000000;
+    --ion-color-primary-contrast-rgb: 0, 0, 0;
+    --ion-color-primary-shade: #afb5ce;
+    --ion-color-primary-tint: #cdd3ec;
 
-	--ion-color-secondary: #B5EAD7;
-	--ion-color-secondary-rgb: 181,234,215;
-	--ion-color-secondary-contrast: #000000;
-	--ion-color-secondary-contrast-rgb: 0,0,0;
-	--ion-color-secondary-shade: #9fcebd;
-	--ion-color-secondary-tint: #bcecdb;
+    --ion-color-secondary: #B5EAD7;
+    --ion-color-secondary-rgb: 181, 234, 215;
+    --ion-color-secondary-contrast: #000000;
+    --ion-color-secondary-contrast-rgb: 0, 0, 0;
+    --ion-color-secondary-shade: #9fcebd;
+    --ion-color-secondary-tint: #bcecdb;
 
-	--ion-color-tertiary: #FADADD;
-	--ion-color-tertiary-rgb: 250,218,221;
-	--ion-color-tertiary-contrast: #000000;
-	--ion-color-tertiary-contrast-rgb: 0,0,0;
-	--ion-color-tertiary-shade: #dcc0c2;
-	--ion-color-tertiary-tint: #fbdee0;
+    --ion-color-tertiary: #FADADD;
+    --ion-color-tertiary-rgb: 250, 218, 221;
+    --ion-color-tertiary-contrast: #000000;
+    --ion-color-tertiary-contrast-rgb: 0, 0, 0;
+    --ion-color-tertiary-shade: #dcc0c2;
+    --ion-color-tertiary-tint: #fbdee0;
 
-	--ion-color-success: #C6F5D8;
-	--ion-color-success-rgb: 198,245,216;
-	--ion-color-success-contrast: #000000;
-	--ion-color-success-contrast-rgb: 0,0,0;
-	--ion-color-success-shade: #aed8be;
-	--ion-color-success-tint: #ccf6dc;
+    --ion-color-success: #C6F5D8;
+    --ion-color-success-rgb: 198, 245, 216;
+    --ion-color-success-contrast: #000000;
+    --ion-color-success-contrast-rgb: 0, 0, 0;
+    --ion-color-success-shade: #aed8be;
+    --ion-color-success-tint: #ccf6dc;
 
-	--ion-color-warning: #FFF3B0;
-	--ion-color-warning-rgb: 255,243,176;
-	--ion-color-warning-contrast: #000000;
-	--ion-color-warning-contrast-rgb: 0,0,0;
-	--ion-color-warning-shade: #e0d69b;
-	--ion-color-warning-tint: #fff4b8;
+    --ion-color-warning: #FFF3B0;
+    --ion-color-warning-rgb: 255, 243, 176;
+    --ion-color-warning-contrast: #000000;
+    --ion-color-warning-contrast-rgb: 0, 0, 0;
+    --ion-color-warning-shade: #e0d69b;
+    --ion-color-warning-tint: #fff4b8;
 
-	--ion-color-danger: #F8B7B7;
-	--ion-color-danger-rgb: 248,183,183;
-	--ion-color-danger-contrast: #000000;
-	--ion-color-danger-contrast-rgb: 0,0,0;
-	--ion-color-danger-shade: #daa1a1;
-	--ion-color-danger-tint: #f9bebe;
+    --ion-color-danger: #F8B7B7;
+    --ion-color-danger-rgb: 248, 183, 183;
+    --ion-color-danger-contrast: #000000;
+    --ion-color-danger-contrast-rgb: 0, 0, 0;
+    --ion-color-danger-shade: #daa1a1;
+    --ion-color-danger-tint: #f9bebe;
 
-	--ion-color-light: #F4F5F8;
-	--ion-color-light-rgb: 244,245,248;
-	--ion-color-light-contrast: #000000;
-	--ion-color-light-contrast-rgb: 0,0,0;
-	--ion-color-light-shade: #d7d8da;
-	--ion-color-light-tint: #f5f6f9;
+    --ion-color-light: #F4F5F8;
+    --ion-color-light-rgb: 244, 245, 248;
+    --ion-color-light-contrast: #000000;
+    --ion-color-light-contrast-rgb: 0, 0, 0;
+    --ion-color-light-shade: #d7d8da;
+    --ion-color-light-tint: #f5f6f9;
 
-	--ion-color-medium: #BFC8E6;
-	--ion-color-medium-rgb: 191,200,230;
-	--ion-color-medium-contrast: #000000;
-	--ion-color-medium-contrast-rgb: 0,0,0;
-	--ion-color-medium-shade: #a8b0ca;
-	--ion-color-medium-tint: #c5cee9;
+    --ion-color-medium: #BFC8E6;
+    --ion-color-medium-rgb: 191, 200, 230;
+    --ion-color-medium-contrast: #000000;
+    --ion-color-medium-contrast-rgb: 0, 0, 0;
+    --ion-color-medium-shade: #a8b0ca;
+    --ion-color-medium-tint: #c5cee9;
 
-	--ion-color-dark: #7C8BA3;
-	--ion-color-dark-rgb: 124,139,163;
-	--ion-color-dark-contrast: #000000;
-	--ion-color-dark-contrast-rgb: 0,0,0;
-	--ion-color-dark-shade: #6d7a8f;
-	--ion-color-dark-tint: #8997ac;
+    --ion-color-dark: #7C8BA3;
+    --ion-color-dark-rgb: 124, 139, 163;
+    --ion-color-dark-contrast: #000000;
+    --ion-color-dark-contrast-rgb: 0, 0, 0;
+    --ion-color-dark-shade: #6d7a8f;
+    --ion-color-dark-tint: #8997ac;
 }
