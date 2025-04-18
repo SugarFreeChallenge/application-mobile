@@ -31,6 +31,6 @@ help:
 ## Initialize project (create .env file, build base image and local image)
 init: .env build
 
-## Pull translation files from tolgee
-pull-translation:
+## Pull translations files from tolgee
+pull-translations:
 	npx tolgee pull --api-url ${VITE_APP_TOLGEE_API_URL} --api-key ${VITE_APP_TOLGEE_API_KEY} --empty-dir --path ./i18n\

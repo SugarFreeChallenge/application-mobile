@@ -47,15 +47,21 @@ import './theme/variables.css';
 import { Navigation } from './components/Navigation/Navigation';
 import { Tolgee, DevTools, TolgeeProvider, FormatSimple } from "@tolgee/react";
 
+import localeEN from "../i18n/en.json";
+import localeFR from "../i18n/fr.json";
+import localeNL from "../i18n/nl.json";
+
 const tolgee = Tolgee()
   .use(DevTools())
   .use(FormatSimple())
   .init({
     language: 'en',
 
-    // for development
-    apiUrl: import.meta.env.VITE_APP_TOLGEE_API_URL,
-    apiKey: import.meta.env.VITE_APP_TOLGEE_API_KEY,
+    staticData: {
+      en: localeEN,
+      fr: localeFR,
+      nl: localeNL,
+    }
   });
 
 setupIonicReact();
