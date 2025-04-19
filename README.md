@@ -34,3 +34,7 @@ xcode-select --install
 brew install cocoapods
 ```
 </details>
+
+<details>
+    <summary>Windows</summary>
+</details>
