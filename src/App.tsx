@@ -45,33 +45,12 @@ import '@ionic/react/css/palettes/dark.class.css';
 /* Theme variables */
 import './theme/variables.css';
 import { Navigation } from './components/Navigation/Navigation';
-import { Tolgee, DevTools, TolgeeProvider, FormatSimple } from "@tolgee/react";
 
-import localeEN from "../i18n/en.json";
-import localeFR from "../i18n/fr.json";
-import localeNL from "../i18n/nl.json";
-
-const tolgee = Tolgee()
-  .use(DevTools())
-  .use(FormatSimple())
-  .init({
-    language: 'en',
-
-    staticData: {
-      en: localeEN,
-      fr: localeFR,
-      nl: localeNL,
-    }
-  });
 
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <TolgeeProvider
-      tolgee={tolgee}
-      fallback="Loading..." // loading fallback
-    >
       <IonReactRouter>
         <IonTabs>
           <IonRouterOutlet>
@@ -92,7 +71,6 @@ const App: React.FC = () => (
           <Navigation activePage="home" />
         </IonTabs>
       </IonReactRouter>
-    </TolgeeProvider>
   </IonApp>
 );
 

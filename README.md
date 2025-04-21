@@ -5,6 +5,10 @@
 Before starting, make sure you have installed the following tools:
 - [Node.js](https://nodejs.org/) (LTS version recommended)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- Make
+  ```bash
+  apt install make
+  ```
 - [Ionic CLI](https://ionicframework.com/docs/cli): Install it globally with the command:
 ```bash
 npm install -g @ionic/cli
@@ -38,3 +42,11 @@ brew install cocoapods
 <details>
     <summary>Windows</summary>
 </details>
+
+## Instalation
+
+1. Initiate the project by running the command
+   ```bash
+    make init
+    ```
+2. replace each environment variable with the correct one (The .env file is inside 1Password)

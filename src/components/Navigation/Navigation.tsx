@@ -12,30 +12,34 @@ import {
     bulbOutline,
     personCircleOutline,
 } from 'ionicons/icons';
+import { useState } from "react";
 
 type NavigationProps = {
-    activePage: "journal" | "health" | "home" | "tips" | "account";
+    activePage?: "home"|"journal"|"health"|"tips"|"account";
 }
 
 export const Navigation: React.FC<NavigationProps> = ({
-    activePage
+    activePage = "home",
 }) => {
     const { t } = useTranslate();
+
+    const [currentPage, setCurrentPage] = useState<string>(activePage ?? "home");
 
     return (
         <IonTabBar slot="bottom">
             <IonTabButton
                 tab="journal"
                 href="/journal"
-                className={activePage == "journal" ? "ion-color-primary" : ""}
+                className={currentPage == "journal" ? "ion-color-primary" : ""}
+                onClick={() => setCurrentPage("journal")}
             >
                 <IonIcon
                     aria-hidden="true"
-                    icon={activePage == "journal" ? create : createOutline}
-                    color={activePage == "journal" ? "primary" : undefined}
+                    icon={currentPage == "journal" ? create : createOutline}
+                    color={currentPage == "journal" ? "primary" : undefined}
                 />
                 <IonLabel
-                    color={activePage == "journal" ? "primary" : undefined}
+                    color={currentPage == "journal" ? "primary" : undefined}
                 >
                     {t("menu.journal")}
                 </IonLabel>
@@ -44,15 +48,16 @@ export const Navigation: React.FC<NavigationProps> = ({
             <IonTabButton
                 tab="health"
                 href="/health"
-                className={activePage == "health" ? "ion-color-primary" : ""}
+                className={currentPage == "health" ? "ion-color-primary" : ""}
+                onClick={() => setCurrentPage("health")}
             >
                 <IonIcon
                     aria-hidden="true"
-                    icon={activePage == "health" ? heart : heartOutline}
-                    color={activePage == "health" ? "primary" : undefined}
+                    icon={currentPage == "health" ? heart : heartOutline}
+                    color={currentPage == "health" ? "primary" : undefined}
                 />
                 <IonLabel
-                    color={activePage == "health" ? "primary" : undefined}
+                    color={currentPage == "health" ? "primary" : undefined}
                 >
                     {t("menu.health")}
                 </IonLabel>
@@ -61,15 +66,16 @@ export const Navigation: React.FC<NavigationProps> = ({
             <IonTabButton
                 tab="home"
                 href="/home"
-                className={activePage == "home" ? "ion-color-primary" : ""}
+                className={currentPage == "home" ? "ion-color-primary" : ""}
+                onClick={() => setCurrentPage("home")}
             >
                 <IonIcon
                     aria-hidden="true"
-                    icon={activePage == "home" ? home : homeOutline}
-                    color={activePage == "home" ? "primary" : undefined}
+                    icon={currentPage == "home" ? home : homeOutline}
+                    color={currentPage == "home" ? "primary" : undefined}
                 />
                 <IonLabel
-                    color={activePage == "home" ? "primary" : undefined}
+                    color={currentPage == "home" ? "primary" : undefined}
                 >
                     {t("menu.home")}
                 </IonLabel>
@@ -78,15 +84,16 @@ export const Navigation: React.FC<NavigationProps> = ({
             <IonTabButton
                 tab="tips"
                 href="/tips"
-                className={activePage == "tips" ? "ion-color-primary" : ""}
+                className={currentPage == "tips" ? "ion-color-primary" : ""}
+                onClick={() => setCurrentPage("tips")}
             >
                 <IonIcon
                     aria-hidden="true"
-                    icon={activePage == "tips" ? bulb : bulbOutline}
-                    color={activePage == "tips" ? "primary" : undefined}
+                    icon={currentPage == "tips" ? bulb : bulbOutline}
+                    color={currentPage == "tips" ? "primary" : undefined}
                 />
                 <IonLabel
-                    color={activePage == "tips" ? "primary" : undefined}
+                    color={currentPage == "tips" ? "primary" : undefined}
                 >
                     {t("menu.tips")}
                 </IonLabel>
@@ -95,15 +102,16 @@ export const Navigation: React.FC<NavigationProps> = ({
             <IonTabButton
                 tab="account"
                 href="/account"
-                className={activePage == "account" ? "ion-color-primary" : ""}
+                className={currentPage == "account" ? "ion-color-primary" : ""}
+                onClick={() => setCurrentPage("account")}
             >
                 <IonIcon
                     aria-hidden="true"
-                    icon={activePage == "account" ? personCircle : personCircleOutline}
-                    color={activePage == "account" ? "primary" : undefined}
+                    icon={currentPage == "account" ? personCircle : personCircleOutline}
+                    color={currentPage == "account" ? "primary" : undefined}
                 />
                 <IonLabel
-                    color={activePage == "account" ? "primary" : undefined}
+                    color={currentPage == "account" ? "primary" : undefined}
                 >
                     {t("menu.account")}
                 </IonLabel>
